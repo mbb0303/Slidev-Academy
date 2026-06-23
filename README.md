@@ -1,13 +1,27 @@
 # Slidev Academy Theme
 
-`slidev-theme-mbb-academy` is a restrained academic Slidev theme distilled from the current BESIII `root_nbar` Summer Collaboration Meeting Slidev format.
+`slidev-theme-mbb-academy` is a restrained academic Slidev theme for scientific meeting slides.
 
 The theme follows the Slidev theme conventions: the package name starts with `slidev-theme-`, the package declares `slidev-theme` and `slidev` keywords, and the theme contributes appearance through global styles, default configuration, and reusable layouts.
+
+## Preview
+
+### Cover
+
+![Cover preview](demo/cover.png)
+
+### Outline
+
+![Outline preview](demo/outline.png)
+
+### Content
+
+![Content preview](demo/content.png)
 
 ## Format Summary
 
 - Font: Times New Roman for body text, titles, and math-adjacent text.
-- Main color: BESIII-style blue `#1E4B9E`.
+- Main color: academic blue `#1E4B9E`.
 - Header: a full-width top bar split into blue left half and gray right half.
 - Left header label: current outline section, inherited from slide frontmatter fields `section`, `sectionTitle`, or `sectionHeader`.
 - Header label: centered in the right half, controlled by `--mbb-header-title`.
@@ -50,7 +64,7 @@ Change the meeting label by overriding the CSS variable:
 ```html
 <style>
 :root {
-  --mbb-header-title: "BESIII 2026 Summer Collaboration Meeting";
+  --mbb-header-title: "International Physics Workshop";
 }
 </style>
 ```
@@ -60,7 +74,7 @@ Set the current outline section in slide frontmatter. The value is inherited by 
 ```md
 ---
 layout: section
-section: Tagged antineutron sample
+section: Samples and event selection
 ---
 
 ---

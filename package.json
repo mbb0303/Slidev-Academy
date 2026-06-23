@@ -1,10 +1,10 @@
 {
   "name": "slidev-theme-mbb-academy",
   "version": "0.1.0",
-  "description": "A restrained academic Slidev theme for BESIII-style scientific meeting slides.",
+  "description": "A restrained academic Slidev theme for scientific meeting slides.",
   "type": "module",
   "license": "MIT",
-  "author": "Mingbo Bai",
+  "author": "Slidev Academy Theme Maintainers",
   "repository": {
     "type": "git",
     "url": "https://github.com/mbb0303/Slidev-Academy.git"
@@ -15,7 +15,7 @@
     "academic",
     "presentation",
     "physics",
-    "besiii"
+    "meeting"
   ],
   "engines": {
     "node": ">=20.0.0",

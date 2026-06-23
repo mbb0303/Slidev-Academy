@@ -7,16 +7,22 @@ mdc: true
 hideSectionHeader: true
 ---
 
+<style>
+:root {
+  --mbb-header-title: "Academy Theme Demo";
+}
+</style>
+
 <div class="cover-logos">
-  <div class="placeholder-logo">USTC</div>
-  <div class="placeholder-logo bes">BESIII</div>
+  <div class="placeholder-logo">LAB</div>
+  <div class="placeholder-logo bes">EXP</div>
 </div>
 
-<div class="cover-title">Study of charge exchange process <InlineMath tex="\bar n\,n\to\bar p\,p" /> at BESIII</div>
+<div class="cover-title">Precision study of a benchmark reaction <InlineMath tex="a+b\to c+d" /></div>
 
-<p class="authors">Jiajun Tang, Mingbo Bai and collaborators</p>
-<p class="institutions">University of Science and Technology of China<br/>BESIII Collaboration</p>
-<p class="cover-date">June 2026</p>
+<p class="authors">Alex Rivera and Jordan Lee</p>
+<p class="institutions">Example Institute for Fundamental Science<br/>Open Collaboration for Demonstration Studies</p>
+<p class="cover-date">July 2026</p>
 
 ---
 layout: default
@@ -25,19 +31,19 @@ layout: default
 # Outline
 
 <ul class="outline-list">
-  <li>Motivation and physics context</li>
-  <li>Tagged antineutron sample</li>
-  <li>Interaction MC and data distributions</li>
-  <li>Cross-section measurement</li>
+  <li>Motivation and context</li>
+  <li>Samples and event selection</li>
+  <li>Simulation and validation</li>
+  <li>Measurement strategy</li>
 </ul>
 
 ---
 layout: section
-section: Tagged antineutron sample
+section: Samples and event selection
 ---
 
-<div class="section-block">Tagged antineutron sample</div>
-<div class="section-subtitle">Selection, source modeling, and background control</div>
+<div class="section-block">Samples and event selection</div>
+<div class="section-subtitle">Grouped criteria, representative figures, and compact formulas</div>
 
 ---
 layout: default
@@ -48,7 +54,7 @@ layout: default
 <div class="selection-grid">
   <div class="selection-groups">
     <div class="selection-group">
-      <div class="selection-heading">Charged tracks for initial <InlineMath tex="p\pi^-" /></div>
+      <div class="selection-heading">Charged tracks for candidate <InlineMath tex="x_1x_2" /></div>
       <ul class="condition-list">
         <li><InlineMath tex="N_c\ge2" /></li>
         <li><InlineMath tex="|\cos\theta|<0.93" /></li>
@@ -56,16 +62,16 @@ layout: default
       </ul>
     </div>
     <div class="selection-group">
-      <div class="selection-heading">PID using TOF and <InlineMath tex="dE/dx" /></div>
+      <div class="selection-heading">Particle identification using TOF and <InlineMath tex="dE/dx" /></div>
       <ul class="condition-list">
         <li><InlineMath tex="P_{\mathrm{PID}}>10^{-3}" /></li>
-        <li><InlineMath tex="P_{\mathrm{selected}}=\max(P_\pi,P_K,P_p)" /></li>
+        <li><InlineMath tex="P_{\mathrm{selected}}=\max(P_a,P_b,P_c)" /></li>
       </ul>
     </div>
     <div class="selection-group">
       <div class="selection-heading">Signal region</div>
       <ul class="condition-list">
-        <li><InlineMath tex="0.92<M_{\mathrm{recoil}}(p\pi^-)<0.96~\mathrm{GeV}/c^2" /></li>
+        <li><InlineMath tex="0.92<M_{\mathrm{recoil}}(x_1x_2)<0.96~\mathrm{GeV}/c^2" /></li>
       </ul>
     </div>
   </div>
@@ -76,7 +82,7 @@ layout: default
 
 ---
 layout: two-cols
-section: Cross-section measurement
+section: Measurement strategy
 ---
 
 # Columns, Citations, and Figures
@@ -85,8 +91,8 @@ section: Cross-section measurement
   <div>
     <h3>Analysis relation</h3>
     <div class="equation-stack">
-      <p class="equation-line"><InlineMath tex="\sigma_{\bar n n\to\bar p p}=N_{\mathrm{obs}}/(\mathcal{L}_{\bar n}\varepsilon)" /></p>
-      <p class="equation-line"><InlineMath tex="\varepsilon=\varepsilon_{\mathrm{tag}}\varepsilon_{\mathrm{int}}" /></p>
+      <p class="equation-line"><InlineMath tex="\sigma=N_{\mathrm{obs}}/(\mathcal{L}_{\mathrm{eff}}\varepsilon)" /></p>
+      <p class="equation-line"><InlineMath tex="\varepsilon=\varepsilon_{\mathrm{sel}}\varepsilon_{\mathrm{rec}}" /></p>
     </div>
     <ul class="bullets">
       <li>Use short, scan-friendly bullets.<sup class="cite">[1]</sup></li>

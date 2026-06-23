@@ -4,6 +4,7 @@ title: Slidev Academy Theme Demo
 layout: cover
 transition: none
 mdc: true
+hideSectionHeader: true
 ---
 
 <div class="cover-logos">
@@ -32,6 +33,7 @@ layout: default
 
 ---
 layout: section
+section: Tagged antineutron sample
 ---
 
 <div class="section-block">Tagged antineutron sample</div>
@@ -74,6 +76,7 @@ layout: default
 
 ---
 layout: two-cols
+section: Cross-section measurement
 ---
 
 # Columns, Citations, and Figures

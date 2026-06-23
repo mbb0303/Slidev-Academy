@@ -38,6 +38,20 @@
   font-size: 13px;
 }
 
+.mbb .mbb-section-header {
+  position: absolute;
+  top: 7px;
+  left: 54px;
+  width: calc(50% - 72px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: white;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.2;
+}
+
 .mbb h1 {
   color: var(--mbb-blue);
   font-weight: 700;

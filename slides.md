@@ -18,7 +18,22 @@ hideSectionHeader: true
   <div class="placeholder-logo bes">EXP</div>
 </div>
 
-<div class="cover-title">Precision study of a benchmark reaction <InlineMath tex="a+b\to c+d" /></div>
+<div class="cover-title-card-wrap">
+  <RenderWhen context="print">
+    <span class="cover-title-card-export-shadow cover-title-card-export-shadow-bottom"></span>
+    <span class="cover-title-card-export-shadow cover-title-card-export-shadow-right"></span>
+    <div class="cover-title-card cover-title-card-print">
+      <div class="cover-title">Precision study of benchmark process <InlineMath tex="a+b\to c+d" /></div>
+      <div class="subtitle">at ExampleLab</div>
+    </div>
+    <template #fallback>
+      <div class="cover-title-card cover-title-card-screen">
+        <div class="cover-title">Precision study of benchmark process <InlineMath tex="a+b\to c+d" /></div>
+        <div class="subtitle">at ExampleLab</div>
+      </div>
+    </template>
+  </RenderWhen>
+</div>
 
 <p class="authors">Alex Rivera and Jordan Lee</p>
 <p class="institutions">Example Institute for Fundamental Science<br/>Open Collaboration for Demonstration Studies</p>
@@ -34,6 +49,7 @@ layout: default
   <li>Motivation and context</li>
   <li>Samples and event selection</li>
   <li>Simulation and validation</li>
+  <li>Layout patterns and figures</li>
   <li>Measurement strategy</li>
 </ul>
 
@@ -106,3 +122,42 @@ section: Measurement strategy
 </div>
 
 <div class="refs">[1] Example reference, journal-style footer citation.</div>
+
+---
+layout: default
+section: Layout patterns and figures
+---
+
+# Single-Column Figure Page
+
+<div class="slide-body layout-single-column">
+  <div class="fig-grid cols-3">
+    <div class="figure-placeholder">Distribution A</div>
+    <div class="figure-placeholder">Distribution B</div>
+    <div class="figure-placeholder">Distribution C</div>
+  </div>
+  <ul class="bullets">
+    <li>Use this pattern when figures should be centered and the slide has only short notes.</li>
+    <li>Formulas remain inline, for example <InlineMath tex="\Delta=\sqrt{s}-m_0" />.</li>
+  </ul>
+</div>
+
+---
+layout: default
+section: Layout patterns and figures
+---
+
+# Two-Row Distribution Page
+
+<div class="slide-body layout-two-row">
+  <div class="fig-grid cols-4">
+    <div class="figure-placeholder">Plot 1</div>
+    <div class="figure-placeholder">Plot 2</div>
+    <div class="figure-placeholder">Plot 3</div>
+    <div class="figure-placeholder">Plot 4</div>
+    <div class="figure-placeholder">Plot 5</div>
+    <div class="figure-placeholder">Plot 6</div>
+    <div class="figure-placeholder">Plot 7</div>
+    <div class="figure-placeholder">Plot 8</div>
+  </div>
+</div>

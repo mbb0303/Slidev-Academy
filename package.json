@@ -1,0 +1,54 @@
+{
+  "name": "slidev-theme-mbb-academy",
+  "version": "0.1.0",
+  "description": "A restrained academic Slidev theme for BESIII-style scientific meeting slides.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Mingbo Bai",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mbb0303/Slidev-Academy.git"
+  },
+  "keywords": [
+    "slidev-theme",
+    "slidev",
+    "academic",
+    "presentation",
+    "physics",
+    "besiii"
+  ],
+  "engines": {
+    "node": ">=20.0.0",
+    "slidev": ">=0.52.0"
+  },
+  "scripts": {
+    "dev": "slidev slides.md --host 127.0.0.1",
+    "export": "slidev export slides.md --output slidev-academy-demo.pdf --timeout 180000 --wait 2000 --wait-until load --per-slide --executable-path \"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\""
+  },
+  "slidev": {
+    "colorSchema": "light",
+    "defaults": {
+      "aspectRatio": "16/9",
+      "transition": "none",
+      "mdc": true,
+      "fonts": {
+        "serif": "Times New Roman, Times",
+        "sans": "Times New Roman, Times",
+        "mono": "Fira Code, Menlo, monospace",
+        "local": "Times New Roman"
+      }
+    }
+  },
+  "dependencies": {
+    "@slidev/types": "^52.0.0",
+    "katex": "^0.16.11"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^52.16.0",
+    "@slidev/theme-default": "^0.25.0",
+    "playwright-chromium": "^1.61.0"
+  },
+  "overrides": {
+    "regex": "6.0.1"
+  }
+}

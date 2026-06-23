@@ -1,0 +1,417 @@
+:root {
+  --mbb-blue: #1E4B9E;
+  --mbb-gray: #D9D9D9;
+  --mbb-light-gray: #F6F7F9;
+  --mbb-text: #000;
+  --mbb-muted: #333;
+  --mbb-reference: #6D8EC6;
+  --mbb-header-title: "BESIII 2026 Summer Collaboration Meeting";
+}
+
+.slidev-layout.mbb {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.08rem;
+  color: var(--mbb-text);
+  background: white;
+  padding: 62px 54px 44px 54px;
+}
+
+.slidev-layout.mbb::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 34px;
+  background: linear-gradient(90deg, var(--mbb-blue) 0 50%, var(--mbb-gray) 50% 100%);
+}
+
+.slidev-layout.mbb::after {
+  content: var(--mbb-header-title);
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  width: 48%;
+  text-align: center;
+  color: var(--mbb-blue);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.mbb h1 {
+  color: var(--mbb-blue);
+  font-weight: 700;
+  font-size: 1.68rem;
+  margin-bottom: 0.55rem;
+}
+
+.mbb h2 {
+  color: var(--mbb-blue);
+  font-size: 1.38rem;
+  font-weight: 700;
+}
+
+.mbb h3 {
+  color: var(--mbb-blue);
+  font-size: 1.18rem;
+  font-weight: 700;
+  margin: 0.25rem 0 0.45rem;
+}
+
+.mbb p {
+  font-size: 1.0rem;
+  line-height: 1.42;
+}
+
+.mbb .cover-logos,
+.mbb .logo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 0.2rem;
+}
+
+.mbb .cover-logos img,
+.mbb .logo-row img {
+  max-height: 74px;
+  object-fit: contain;
+}
+
+.mbb .cover-title {
+  color: var(--mbb-blue);
+  font-size: 1.78rem;
+  line-height: 1.18;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 1.05rem;
+  white-space: nowrap;
+}
+
+.mbb .cover-title .math-inline,
+.mbb .cover-title .katex,
+.mbb .cover-title .katex * {
+  font-style: normal !important;
+  font-weight: 700 !important;
+}
+
+.mbb .subtitle {
+  color: var(--mbb-blue);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.mbb .authors {
+  text-align: center;
+  font-size: 0.98rem;
+  line-height: 1.25;
+  font-weight: 600;
+  margin-top: 0.95rem;
+  margin-bottom: 0.55rem;
+}
+
+.mbb .institutions {
+  text-align: center;
+  font-size: 0.84rem;
+  line-height: 1.34;
+  font-style: italic;
+  color: var(--mbb-muted);
+  margin: 0.15rem 0;
+}
+
+.mbb .cover-date {
+  text-align: center;
+  font-size: 0.82rem;
+  line-height: 1.25;
+  color: #222;
+  margin-top: 0.62rem;
+}
+
+.mbb .columns,
+.mbb.two-cols .columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.1rem;
+  align-items: start;
+}
+
+.mbb .bullets {
+  font-size: 1.0rem;
+  line-height: 1.5;
+  margin-top: 0.45rem;
+}
+
+.mbb .bullets li {
+  margin-bottom: 0.42rem;
+}
+
+.mbb .equation-bullets {
+  font-size: 0.96rem;
+  line-height: 1.28;
+  margin-top: 0.22rem;
+  padding-left: 1.2rem;
+}
+
+.mbb .equation-bullets li {
+  margin-bottom: 0.22rem;
+  padding-left: 0.15rem;
+}
+
+.mbb .selection-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.mbb .selection-grid .fig-grid {
+  margin-top: 0.35rem;
+}
+
+.mbb .selection-grid .cols-1 img {
+  max-height: 255px;
+}
+
+.mbb .selection-grid .cols-2 img {
+  max-height: 136px;
+}
+
+.mbb .selection-groups {
+  margin-top: 0.12rem;
+}
+
+.mbb .selection-group {
+  margin-bottom: 0.24rem;
+}
+
+.mbb .selection-heading {
+  color: var(--mbb-blue);
+  font-size: 0.96rem;
+  line-height: 1.16;
+  font-weight: 700;
+  margin-bottom: 0.1rem;
+}
+
+.mbb .condition-list,
+.mbb .condition-notes {
+  margin: 0.02rem 0;
+  padding-left: 0;
+  list-style: none;
+  font-size: 0.8rem;
+  line-height: 1.1;
+}
+
+.mbb .condition-list li,
+.mbb .condition-notes li {
+  position: relative;
+  margin-bottom: 0.06rem;
+  padding-left: 0.62rem;
+}
+
+.mbb .condition-list li::before,
+.mbb .condition-notes li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.47em;
+  width: 0.28rem;
+  height: 0.28rem;
+  border: 1.4px solid var(--mbb-blue);
+  background: white;
+}
+
+.mbb .condition-notes {
+  color: var(--mbb-muted);
+  font-size: 0.78rem;
+}
+
+.mbb .outline-list {
+  margin-top: 1.1rem;
+  padding-left: 0;
+  color: var(--mbb-blue);
+  font-size: 1.42rem;
+  font-weight: 700;
+  line-height: 1.75;
+  list-style: none;
+}
+
+.mbb .outline-list li {
+  position: relative;
+  padding-left: 1.05rem;
+  margin-bottom: 0.35rem;
+}
+
+.mbb .outline-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.66em;
+  width: 0.42rem;
+  height: 0.42rem;
+  border: 2px solid var(--mbb-blue);
+  background: #F7F9FD;
+  transform: rotate(45deg);
+}
+
+.mbb .equation-stack {
+  margin: 0.3rem 0 0.65rem;
+  color: inherit;
+  font-size: inherit;
+  line-height: 1.35;
+}
+
+.mbb .equation-line {
+  margin: 0.18rem 0;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.mbb .math-inline {
+  display: inline;
+  vertical-align: baseline;
+  white-space: nowrap;
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+}
+
+.mbb .katex,
+.mbb .katex * {
+  font-family: inherit !important;
+  color: inherit !important;
+}
+
+.mbb .katex,
+.mbb .math-inline .katex {
+  font-size: 1em !important;
+  line-height: inherit !important;
+}
+
+.mbb .cite {
+  color: var(--mbb-blue);
+  font-size: 0.68em;
+  font-weight: 700;
+  vertical-align: super;
+  margin-left: 0.1em;
+  white-space: nowrap;
+}
+
+.mbb .fig-grid {
+  display: grid;
+  gap: 0.45rem;
+  align-items: center;
+  justify-items: stretch;
+  width: 100%;
+  margin: 0.25rem auto 0.35rem;
+}
+
+.mbb .cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+.mbb .cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.mbb .cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.mbb .cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+.mbb .fig-grid img {
+  max-width: 100%;
+  max-height: 205px;
+  object-fit: contain;
+  margin: auto;
+}
+
+.mbb .figure-placeholder {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 160px;
+  border: 1.2px solid #666;
+  display: grid;
+  place-items: center;
+  color: var(--mbb-blue);
+  font-weight: 700;
+  text-align: center;
+}
+
+.mbb .cols-1 .figure-placeholder {
+  min-height: 240px;
+}
+
+.mbb .cols-2 .figure-placeholder {
+  min-height: 130px;
+}
+
+.mbb .cols-4 img { max-height: 170px; }
+.mbb .cols-3 img { max-height: 205px; }
+.mbb .cols-2 img { max-height: 275px; }
+
+.mbb .fig-grid-with-equations,
+.mbb .fig-grid-with-notes,
+.mbb .fig-grid-with-refs {
+  gap: 0.34rem;
+  margin-bottom: 0.15rem;
+}
+
+.mbb .fig-grid-with-equations.cols-3 img,
+.mbb .fig-grid-with-notes.cols-3 img {
+  max-height: 164px;
+}
+
+.mbb .fig-grid-with-refs.cols-3 img {
+  max-height: 152px;
+}
+
+.mbb .refs {
+  position: absolute;
+  left: 54px;
+  right: 104px;
+  bottom: 22px;
+  color: var(--mbb-reference);
+  font-size: 0.56rem;
+  line-height: 1.18;
+}
+
+.mbb .mbb-page-number {
+  position: absolute;
+  right: 54px;
+  bottom: 18px;
+  color: var(--mbb-blue);
+  font-size: 0.72rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.mbb.section .section-block {
+  margin: 2rem 0 0 -54px;
+  width: 76%;
+  background: var(--mbb-blue);
+  color: white;
+  padding: 1.0rem 2.6rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.mbb.section .section-subtitle {
+  margin: 1rem 0 0 2rem;
+  color: var(--mbb-blue);
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.mbb .placeholder-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 74px;
+  min-width: 74px;
+  padding: 0 0.7rem;
+  border: 2px solid var(--mbb-blue);
+  color: var(--mbb-blue);
+  font-weight: 700;
+  border-radius: 50%;
+}
+
+.mbb .placeholder-logo.bes {
+  border-radius: 0;
+  border: 0;
+  min-width: 130px;
+  height: 58px;
+  font-size: 1.35rem;
+}

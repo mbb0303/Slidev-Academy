@@ -1,0 +1,6 @@
+demo_method:
+  text: "Example Method Paper, Phys Rev D 102, 012345"
+  href: "https://doi.org/10.1103/PhysRevD.102.012345"
+demo_detector:
+  text: "Example Detector Note, J Instrum 15, P01001"
+  href: "https://doi.org/10.1088/1748-0221/15/01/P01001"

@@ -22,8 +22,8 @@
     "slidev": ">=0.52.0"
   },
   "scripts": {
-    "dev": "slidev slides.md --host 127.0.0.1",
-    "export": "slidev export slides.md --output slidev-academy-demo.pdf --timeout 180000 --wait 2000 --wait-until load --per-slide --executable-path \"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\""
+    "dev": "/opt/homebrew/bin/node node_modules/.pnpm/@slidev+cli@*/node_modules/@slidev/cli/bin/slidev.mjs slides.md --host 127.0.0.1",
+    "export": "/opt/homebrew/bin/node node_modules/.pnpm/@slidev+cli@*/node_modules/@slidev/cli/bin/slidev.mjs export slides.md --output slidev-academy-demo.pdf --timeout 180000 --wait 2000 --wait-until load --per-slide --executable-path \"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\""
   },
   "slidev": {
     "colorSchema": "light",

@@ -1,11 +1,7 @@
 <script setup lang="ts">
-import MbbFrame from '../components/MbbFrame.vue'
+import MbbDefault from './mbb-default.vue'
 </script>
 
 <template>
-  <div class="slidev-layout mbb default">
-    <MbbFrame>
-      <slot />
-    </MbbFrame>
-  </div>
+  <MbbDefault><slot /></MbbDefault>
 </template>

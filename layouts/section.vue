@@ -1,11 +1,8 @@
 <script setup lang="ts">
-import MbbFrame from '../components/MbbFrame.vue'
+import MbbSection from './mbb-section.vue'
+defineProps<{ sectionTitle?: string, sectionSubtitle?: string }>()
 </script>
 
 <template>
-  <div class="slidev-layout mbb section">
-    <MbbFrame>
-      <slot />
-    </MbbFrame>
-  </div>
+  <MbbSection :section-title="sectionTitle" :section-subtitle="sectionSubtitle"><slot /></MbbSection>
 </template>

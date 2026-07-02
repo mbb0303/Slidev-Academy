@@ -1,11 +1,8 @@
 <script setup lang="ts">
-import MbbFrame from '../components/MbbFrame.vue'
+import MbbCover from './mbb-cover.vue'
+defineProps<{ leftLogo?: string, rightLogo?: string, authors?: string, institutions?: string, date?: string }>()
 </script>
 
 <template>
-  <div class="slidev-layout mbb cover">
-    <MbbFrame>
-      <slot />
-    </MbbFrame>
-  </div>
+  <MbbCover :left-logo="leftLogo" :right-logo="rightLogo" :authors="authors" :institutions="institutions" :date="date"><slot /><template #logos><slot name="logos" /></template></MbbCover>
 </template>
